@@ -1,0 +1,132 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.freecodecamp-logo {
+    height: 40px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+}
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Logo */
+.freecodecamp-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+/* Phone Container */
+.phone-container {
+  background-color: #111;
+  border-radius: 40px;
+  border: 6px solid #333;
+  width: 320px;
+  height: 600px;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+/* Camera dot */
+.phone-camera {
+  width: 50px;
+  height: 10px;
+  background-color: #444;
+  border-radius: 10px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Label */
+label {
+  display: block;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Input Field */
+#user-input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+}
+
+/* Results */
+#results-div {
+  margin-top: 20px;
+  font-weight: bold;
+  min-height: 24px;
+  color: #facc15;
+}
+
+/* Buttons Container */
+.phone-footer {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Buttons */
+.btn-styles {
+  background-color: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-styles:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .phone-container {
+    width: 90%;
+    height: auto;
+    padding: 30px 15px 80px;
+  }
+
+  .phone-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
