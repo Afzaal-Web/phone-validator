@@ -9,6 +9,11 @@ checkButton.addEventListener('click', () => {
 
 clearButton.addEventListener('click', () => resultDiv.textContent = "");
 
+userInput.addEventListener('keydown', (e) => {
+if(e.key === 'Enter'){
+showResult();
+}
+})
 
 const regex = /^1?\s*(\(\d{3}\)|\d{3})[-\s]?\d{3}[-\s]?\d{4}$/
 
