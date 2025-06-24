@@ -4,11 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.freecodecamp-logo {
-    height: 40px;
-    margin-bottom: 20px;
-    filter: brightness(0) invert(1);
-}
+
 body {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   font-family: 'Segoe UI', sans-serif;
@@ -29,27 +25,29 @@ main {
 
 /* Logo */
 .freecodecamp-logo {
-  width: 60px;
-  height: auto;
-  margin-bottom: 15px;
+    height: 40px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
 }
 
 /* Heading */
 h1 {
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  margin-top: 20px;
+  font-size: 1.2rem;
 }
 
 /* Phone Container */
 .phone-container {
+     position: relative;
   background-color: #111;
   border-radius: 40px;
   border: 6px solid #333;
   width: 320px;
-  height: 600px;
+  height: 550px;
   padding: 40px 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  position: relative;
+ 
 }
 
 /* Camera dot */
@@ -87,6 +85,7 @@ label {
 /* Results */
 #results-div {
   margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: bold;
   min-height: 24px;
   color: #facc15;
@@ -96,10 +95,14 @@ label {
 .phone-footer {
   position: absolute;
   bottom: 30px;
-  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
+
 
 /* Buttons */
 .btn-styles {
