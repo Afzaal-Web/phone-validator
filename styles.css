@@ -88,9 +88,16 @@ label {
   margin-bottom: 20px;
   font-weight: bold;
   min-height: 24px;
-  color: #facc15;
+  text-align: left;
 }
 
+/* Warning added */
+.hrParent{
+    margin-top: 10px;
+}
+.warningAdded{
+    margin-top: 10px;
+}
 /* Buttons Container */
 .phone-footer {
   position: absolute;
